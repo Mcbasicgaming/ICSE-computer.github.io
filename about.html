@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | ICSE/ISC Computer Application</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8fbff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* ===== Navbar ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    .logo h2 {
+      font-size: 1.2rem;
+      color: #111;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #00bcd4;
+    }
+
+    /* ===== About Section ===== */
+    .about-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      font-size: 2.5rem;
+      color: #111;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    .about-section h3 {
+      font-size: 1.5rem;
+      color: #00bcd4;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .about-section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .about-section ul li {
+      margin: 10px 0;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .mission {
+      background-color: #e0f7fa;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .mission h3 {
+      color: #007c91;
+    }
+
+    .timeline {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .timeline-item {
+      background: #fff;
+      margin: 15px 0;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .timeline-item span {
+      font-weight: 600;
+      color: #00bcd4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+      }
+      .about-section {
+        padding: 0 15px;
+      }
+      .about-section h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <div class="logo">
+      <img src="img/favicon.jpg" alt="Logo">
+      <h2>ICSE/ISC Computer Application</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section class="about-section">
+    <h1>About ICSE/ISC Computer Application</h1>
+    <p>Welcome to <strong>ICSE/ISC Computer Application</strong> — a digital space built to simplify coding and make computer learning easier for students. Our mission is to provide high-quality, exam-focused notes, real coding projects, and helpful learning resources — all in one place.</p>
+
+    <h3>What We Offer</h3>
+    <ul>
+      <li>💻 Detailed Notes for ICSE/ISC Computer Applications</li>
+      <li>📘 Practical Coding Projects with Source Code</li>
+      <li>🎓 Easy-to-understand Explanations and Examples</li>
+      <li>🌐 Career and Programming Guidance for Students</li>
+    </ul>
+
+    <div class="mission">
+      <h3>Our Mission</h3>
+      <p>Our goal is to make coding simple, fun, and accessible for every student — because programming isn’t just a subject, it’s a superpower that helps you build the future.</p>
+    </div>
+
+    <h3>Our Story</h3>
+    <p>This platform was created by a passionate student who wanted to make computer learning easier for everyone. What began as personal notes evolved into a complete hub for ICSE/ISC learners who wish to master programming with clarity and confidence.</p>
+
+    <div class="timeline">
+      <h3>Our Journey</h3>
+      <div class="timeline-item"><span>2023:</span> Started building coding projects.</div>
+      <div class="timeline-item"><span>2024:</span> Collected and organized ICSE/ISC computer notes.</div>
+      <div class="timeline-item"><span>2025:</span> Launched the official learning website to help students like you.</div>
+      <div class="timeline-item"><span>Future:</span> Expanding to full-fledged coding courses and AI-powered tools.</div>
+    </div>
+
+    <h3>Join Our Community</h3>
+    <p>Explore our <a href="notes.html" style="color:#00bcd4; text-decoration:none; font-weight:600;">Notes</a>, 
+      <a href="courses.html" style="color:#00bcd4; text-decoration:none; font-weight:600;">Courses</a>, and 
+      <a href="project.html" style="color:#00bcd4; text-decoration:none; font-weight:600;">Projects</a> 
+      — and start your journey in the world of coding today!</p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    © 2025 ICSE/ISC Computer Application. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
