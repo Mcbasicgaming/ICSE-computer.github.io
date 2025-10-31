@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | ICSE/ISC Computer Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8fbff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            padding: 12px 40px;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        header h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #111;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #111;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #00bcd4;
+        }
+
+        .search-bar input {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            outline: none;
+        }
+
+        .search-bar button {
+            background-color: #00bcd4;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #0097a7;
+        }
+
+        /* ===== Layout ===== */
+        .main-container {
+            display: flex;
+            flex: 1;
+            padding: 40px;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #e9f5ff;
+            border-right: 2px solid #00bcd4;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .sidebar h2 {
+            color: #00bcd4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* ===== Course Cards ===== */
+        .content {
+            flex: 1;
+            padding-left: 40px;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            color: #0088cc;
+            margin-bottom: 25px;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #cdefff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: scale(1.02);
+            border-color: #00bcd4;
+            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.2);
+        }
+
+        .course-card h2 {
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .content {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== Header ===== -->
+    <header>
+        <div class="logo">
+            <img src="img/favicon.jpg" alt="Logo">
+            <h2>ICSE/ISC Computer Application</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>Courses</h2>
+            <ul>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">HTML & CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Java</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Explore Our Free Coding Courses</h1>
+
+            <div class="course-card">
+                <h2>Python for Beginners</h2>
+                <p>Learn Python from scratch with hands-on projects and clear explanations tailored for ICSE/ISC students.</p>
+            </div>
+
+            <div class="course-card">
+                <h2>HTML & CSS Mastery</h2>
+                <p>Build your first responsive website with HTML & CSS. Learn modern design techniques and layouts.</p>
+            </div>
+
+            <div class="course-card">
+                <h2>JavaScript Fundamentals</h2>
+                <p>Understand how JavaScript brings your website to life with interactivity and logic-based programming.</p>
+            </div>
+
+            <div class="course-card">
+                <h2>Java Basics</h2>
+                <p>Dive into object-oriented programming with Java — learn syntax, logic, and project-based coding.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        © 2025 ICSE/ISC Computer Application. All Rights Reserved.
+    </footer>
+</body>
+</html>
